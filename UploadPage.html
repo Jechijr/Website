@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<!--This is the name which appears on the tab-->
+<head>
+
+<!-- This connects the page to CSS -->
+<style type="text/css">
+ 
+            body {font-family:Arial, Sans-Serif;}
+ 
+            #container {width:600px; margin:0 auto;}
+ 
+            form label {display:inline-block; width:300px;}
+ 
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+ 
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
+            
+            #fixedheight {
+                table-layout: fixed;
+            }
+
+            #fixedheight td {
+                width: 15%;
+            }
+
+            #fixedheight td div {
+                height: 20px;
+                overflow: hidden;
+            }
+ 
+        </style>
+        
+<title>TheCloud Upload</title>
+</head>
+
+<body style="background-color:lightgrey">
+<!--Style changes the background color-->
+
+<!--Style="color:blue"> changes the color of a sentence
+<i> for italic and <b> for bold-->
+<center><h1 style="font-size:300%">TheCloud</h1></center>
+
+<!--<hr> leaves a horizontal line under the sentence -->
+<hr>
+
+
+<!-- The table-->
+<table id="fixedheight">
+            <tbody>
+            <tr>
+                <td><div>Files</div></td>
+                <td><div>Date Uploaded</div></td>
+                <td><div>File Type</div></td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <!-- line breaks-->
+        <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+<!-- The file uploader, connected to PHP-->
+<form enctype="multipart/form-data" action="upload.php" method="post">
+    Select file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <br> <br>
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+</body>
+</html>

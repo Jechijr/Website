@@ -1,0 +1,45 @@
+body {background: #ffffff; margin: 0; padding: 0;} 
+a {color: #2b2bf6;}           
+#container {width: 900px; margin: 0; padding: 0; background: #white;}           
+#header {width: 900px; 	height: 50px; 	margin: 0; padding: 0; border: 0; background: white;}
+#header p {font-family: Arial; font-size: 70px}      
+#sidebar {width: 500px; height: 20px; 	margin: 0; padding: 0; border: 0; float: left; background: white;}           
+#content {width: 400px; height: 100px; 	margin: 0; padding: 0; border: 0; float: left; background: white;} 
+#content p {font-family: courier; font-size: 20px}
+#content c {font-family: courier; font-size: 16px}
+#content <style type="text/css">
+
+input.groovybutton
+{
+   font-size:11px;
+   font-family:Courier;
+   font-weight:bold;
+   color:White;
+   width:200px;
+   background-color:Blue;
+   border-style:solid;
+   border-color:#003377;
+   border-width:5;
+}
+
+</style>
+
+<script language="javascript">
+
+function goLite(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#FFFF99";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#11AAEE";
+}
+
+function goDim(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#EEFFFF";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#0088DD";
+}
+
+</script>
+
+#footer {width: 900px; 	height: 50px; 	margin: 0; padding: 0; border: 0; float: left; background: light Blue; clear:both;} 
+#footer p {font-family: Arial; font-size: 12px}    
+                       
